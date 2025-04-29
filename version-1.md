@@ -10,7 +10,7 @@ START
   |
   v
 [2️⃣ Dynamic Prompt Builder]
-  - Show only mandatory fields for input:
+  - mandatory fields input:
     - Trade Date
     - Settlement Date
     - Safekeeping Account
@@ -19,7 +19,7 @@ START
     - Instruction Type (RF, DF, RVP, DVP)
     - Transaction Type (Standard, Repo, Reverse Repo, Pledge, etc.)
   - Prompt example auto-generated:
-    → "Create a DVP Repo trade for ISIN IN1234567890 with settlement on May 2, using account ABC123 at Mumbai branch."
+    → "Create a DVP Repo trade for ISIN IN1234567890 with settlement on May 2, using account ABC123 at NK branch."
   |
   v
 [3️⃣ User Enters Prompt or Data]
@@ -30,7 +30,7 @@ START
 [4️⃣ Search Vector DB for Similar Trades]
   - Embed prompt context
   - Fetch user’s past N trade vectors with similar context
-  - Return trade patterns (e.g., typically uses ABC Bank for bonds)
+  - Return trade patterns 
   |
   v
 [5️⃣ LLM Engine Completes Trade Instruction]
@@ -38,7 +38,7 @@ START
     • User input
     • Vector DB matches
     • Domain-specific trade logic
-  - Fills all ~200 fields, even optional ones
+  - Fills at max fields, have approx ~200 fields, many optional
   - Adds notes where values are inferred
   |
   v
