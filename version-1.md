@@ -90,9 +90,9 @@ flowchart TD
     B --> C[Dynamic Prompt Builder: Mandatory Fields Only]
     C --> D[User Provides Prompt or Input]
     D --> E[Search Vector DB for Similar Past Trades]
-    E --> F[LLM Completes Trade Instruction (200 Fields)]
+    E --> F[LLM Completes Trade Instruction approx 200 Field]
     F --> G[Map Output to CSV or Excel Template]
-    G --> H[User Previews and Edits (Optional)]
+    G --> H[User Previews and Edits - this is Optional]
     H --> I[Export File: Download or Upload]
     I --> Z[End]
 
@@ -114,10 +114,10 @@ flowchart TD
     D --> E[Similar Trade Patterns Returned]
     E --> F[LLM Completion Service]
     F --> G[Field Completion & Trade Logic Service]
-    G --> H[Template Mapping Service (CSV/Excel Formatter)]
+    G --> H[Template Mapping Service -CSV/Excel Formatter]
     H --> I[File Generation Service]
     I --> J[Preview & Edit UI Service]
-    J --> K[Export Service (Download / Upload to Trade System)]
+    J --> K[Export Service Download or Upload to Trade System]
     K --> Z[End]
 ```
 
